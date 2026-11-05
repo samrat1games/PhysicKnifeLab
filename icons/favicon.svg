@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16222b"/><stop offset="1" stop-color="#0a1014"/>
+    </linearGradient>
+    <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6ff2d0"/><stop offset="1" stop-color="#1aa38a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.62" r="0.5">
+      <stop offset="0" stop-color="#3ee6c0" stop-opacity=".45"/><stop offset="1" stop-color="#3ee6c0" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="flask"><path d="M206 120h100v110l92 158a34 34 0 0 1-29 51H143a34 34 0 0 1-29-51l92-158z"/></clipPath>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="330" r="210" fill="url(#glow)"/>
+  <!-- атом-орбиты на фоне -->
+  <g fill="none" stroke="#5fd9ff" stroke-opacity=".35" stroke-width="5">
+    <ellipse cx="256" cy="256" rx="200" ry="70" transform="rotate(-30 256 256)"/>
+    <ellipse cx="256" cy="256" rx="200" ry="70" transform="rotate(30 256 256)"/>
+  </g>
+  <circle cx="96" cy="170" r="11" fill="#5fd9ff"/><circle cx="420" cy="170" r="11" fill="#5fd9ff"/>
+  <!-- колба -->
+  <path d="M206 120h100v110l92 158a34 34 0 0 1-29 51H143a34 34 0 0 1-29-51l92-158z" fill="#ffffff" fill-opacity=".08"/>
+  <g clip-path="url(#flask)">
+    <path d="M90 318q41-22 82 0t82 0 82 0 82 0v140H90z" fill="url(#liq)"/>
+    <circle cx="214" cy="372" r="11" fill="#d8fff5" fill-opacity=".85"/>
+    <circle cx="276" cy="404" r="16" fill="#d8fff5" fill-opacity=".8"/>
+    <circle cx="326" cy="356" r="8" fill="#d8fff5" fill-opacity=".85"/>
+  </g>
+  <path d="M206 120h100v110l92 158a34 34 0 0 1-29 51H143a34 34 0 0 1-29-51l92-158z" fill="none" stroke="#e8fbff" stroke-width="14" stroke-linejoin="round"/>
+  <rect x="190" y="104" width="132" height="26" rx="13" fill="#e8fbff"/>
+  <!-- пузырьки над горлышком -->
+  <circle cx="240" cy="70" r="12" fill="none" stroke="#6ff2d0" stroke-width="6"/>
+  <circle cx="276" cy="46" r="8" fill="none" stroke="#6ff2d0" stroke-width="5"/>
+</svg>
